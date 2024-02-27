@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mensajesServidor.Controllers.TableController">
+   <children>
+      <TableView fx:id="vistaChats" layoutX="7.0" layoutY="14.0" onSort="#MostrarChats" prefHeight="309.0" prefWidth="587.0">
+         <columns>
+            <TableColumn fx:id="IDColum" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="nombreColum" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="ContrasenaColum" prefWidth="75.0" text="Contrasena" />
+         </columns></TableView>
+      <Button fx:id="chatearButton" layoutX="515.0" layoutY="334.0" mnemonicParsing="false" onAction="#AbrirChat" text="Chatear" />
+      <Button fx:id="mostrar" layoutX="428.0" layoutY="334.0" mnemonicParsing="false" onAction="#mostrarTablaButton" text="Mostrar" />
+   </children>
+</Pane>
